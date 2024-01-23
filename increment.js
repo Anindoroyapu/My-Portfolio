@@ -13,6 +13,12 @@ const Increment =()=>{
 
     )
 }
-ReactDOM.render(<Increment/>,domContainer)
+ReactDOM.render(<div className="container">
+    <Increment/>
+    <Increment/>
+    <Increment/>
+
+</div>,
+domContainer);
 
 

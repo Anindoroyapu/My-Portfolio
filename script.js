@@ -1,4 +1,4 @@
-let number=0;
+ let number=0;
 
 const button = document.querySelector("#button");
 const button1 = document.querySelector("#button1");
