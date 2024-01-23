@@ -13,12 +13,10 @@ const Increment =()=>{
 
     )
 }
-ReactDOM.render(<div className="container">
+ReactDOM.render(<div class="creatE">
     <Increment/>
     <Increment/>
-    <Increment/>
-
-</div>,
-domContainer);
+    </div>
+,domContainer); 
 
 
