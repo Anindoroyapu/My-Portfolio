@@ -3,7 +3,7 @@
 }
 .container{
     text-align: center;
-    margin-top:180px ;
+    margin-top: 15% ;
 
 }
 .container h1{
@@ -14,11 +14,14 @@
     margin-top: 0;
     background-size: 180px;
     background-color: blue;
-    border-radius: 15px; 
+    border-radius: 10px; 
     border: 0px ;
     padding: 20px;
     color: aliceblue;
     font-size: 30px ;
     font-weight: bolder;
-
+}
+.container button:hover{
+    background-color: rgb(77, 77, 247);
+    padding: 25px;
 }
