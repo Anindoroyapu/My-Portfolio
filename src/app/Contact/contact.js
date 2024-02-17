@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css'
 import facebookicon from '../../assets/facebook.png';
 import instraicon from '../../assets/instra.png';
 import linkedinicon from '../../assets/linkedin.png';
 import {Link} from 'react-scroll';
+import emailjs from '@emailjs/browser';
 
 const Contact=()=>{
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_dyzrdpj', 'template_ucfx14c', form.current, {
+            publicKey: '1lJVFMrWc8rgBdoF3oO6m',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+
     return(
         <section id="contactPage">
             <div id='clients'>
@@ -16,9 +36,9 @@ const Contact=()=>{
             <h1 className="contactPageTitle">Contact Me</h1>
             <span className="contactDesc">Please fill out the from below to discuss any work opportunities.</span>
 
-            <form action="" className="contactform">
-                <input type="text" className="name" placeholder='Your Name' />
-                <input type="email" className="email" placeholder='Your Email'/>
+            <form action="" className="contactform" ref={form} onSubmit={sendEmail}>
+                <input type="text" className="name" placeholder='Your Name' name="user_name" />
+                <input type="email" className="email" placeholder='Your Email' name="user_email"/>
                 <textarea className='msg' name="message"  rows="5" placeholder='Text Your Message'></textarea>
                 <br />
                 <button type='submit' value='send'
