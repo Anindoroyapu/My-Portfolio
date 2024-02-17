@@ -5,7 +5,7 @@ import Navbar from "../Navbar/navbar";
 function Footer() {
     return (
       <div className="Footer">
-        <Navbar /> 
+        
         
   
       </div>
