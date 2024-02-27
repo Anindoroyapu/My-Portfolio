@@ -54,6 +54,10 @@
     border: none;
     border-radius:2rem ;    
 }
+.submitBtn:active{
+    color: red;
+    background-color: white;
+}
 .submitBtn:hover{
     font-size: 1.1rem;
     background: yellow;

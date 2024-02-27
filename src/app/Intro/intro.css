@@ -58,7 +58,6 @@
     border-radius:2rem ;    
 }
 .btn:hover{
-    font-size: 1.1rem;
     background: yellow;
     transition: 0.2s;
 }

@@ -26,6 +26,9 @@
     font-weight: bolder;
     
   }
+  .desktopmenu:active{
+    color: yellow;
+  }
   .desktopmenu a:hover{
     color: yellow;
     padding-bottom: 0.5rem;
@@ -44,12 +47,15 @@
   
   }
   .desktopbutton:hover{
-    font-size:20.5px ;
+    
     background-color: yellow;
     transform: 1s;
   }
 .active{
     color: yellow;
+}
+.desktopbutton:active{
+  color: red;
 }
 
 .mobMenu{
