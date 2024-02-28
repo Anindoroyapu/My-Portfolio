@@ -1,25 +1,20 @@
-
 import "./App.css"
-import Contact from "./app/Contact/contact";
-import Intro from "./app/Intro/intro";
-import Navbar from "./app/Navbar/navbar";
-import Skills from "./app/Skills/skills";
-import Works from "./app/Works/work";
-import Footer from "./app/Footer/footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./app/pages/Home";
+import Layout from "./app/Layout";
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar /> 
-      <Intro />
-      <Skills />
-      <Works />
-      <Contact/>
-      <footer />
-      
-
-    </div>
+    <BrowserRouter>
+    
+    <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+         
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

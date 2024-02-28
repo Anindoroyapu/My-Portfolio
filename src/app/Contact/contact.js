@@ -5,22 +5,33 @@ import instraicon from '../../assets/instra.png';
 import linkedinicon from '../../assets/linkedin.png';
 import emailjs from '@emailjs/browser';
 
+
 const Contact=()=>{
     const form = useRef();
-
+    const clearForm =()=>{
+        form.current.reset();
+      };
+    
     const sendEmail = (e) => {
         e.preventDefault();
+        
+         alert(' Form Submitted');
+
         emailjs
           .sendForm('service_3x1x6nu', 'template_ucfx14c', form.current, {
             publicKey: 'WScDiKIp5jDk31IgB',
           })
           .then((result) => {
               console.log(result.text);
+              
             })
-            .catch((error) => {
+          .catch((error) => {
                 console.log(error.text);
             })
+        clearForm();
+
       };
+      
 
     return(
         <section id="contactPage">

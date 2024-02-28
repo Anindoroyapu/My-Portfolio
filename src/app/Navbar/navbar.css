@@ -26,8 +26,8 @@
     font-weight: bolder;
     
   }
-  .desktopmenu:active{
-    color: yellow;
+  .desktopmenu a:active{
+    color: red;
   }
   .desktopmenu a:hover{
     color: yellow;
