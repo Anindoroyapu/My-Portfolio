@@ -20,11 +20,15 @@ const Navbar = () => {
                 <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portfolio</Link>
 
             </div>
-
-            <button className="desktopbutton" activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500}>
+            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">
+            <button className="desktopbutton" >
 
                 <img src="" alt="" className="desktopmenuimg" />Contact me
             </button>
+            
+            </Link>
+
+            
 
             <img src={menu} alt="Menu" className='mobMenu' onClick={()=>setShowMenu(!showMenu)}/>
 
