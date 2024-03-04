@@ -1,8 +1,8 @@
 .pricing .pricing-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 70px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .pricing .pricing-card-subheading{
     margin-bottom: 30px;
@@ -12,10 +12,69 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .container-sm{
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 7rem;
     padding: 0 15px;
+}
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+.pricing-card-subheading{
+    margin-bottom: 20px;
+}
+.pricing-card-price{
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc ;
+}
+.pricing ul{
+    margin: 10px;
+    margin-bottom: 3rem;
+}
+
+.pricing ul li{
+    margin-bottom: 10px;
+    
+}
+.pricing ul li i{
+    margin-right: 10px;
+    margin-bottom: 15rem;
+}
+.pricing .pricing-footer{
+    margin: 10px 0;
+}
+.card{
+    background: rgb(40, 40, 40);
+    color: white;
+    border-radius: 10px;
+    padding:20px ;
+    
+}
+.card .btn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-footer{
+    padding-top: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-heading{
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.8rem;
+    
+}
+.btn-primary{
+    
 }

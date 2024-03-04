@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../assets/logo.png";
 import img from "../assets/myphoto.png"
-import {Link} from 'react-scroll';
+
 import menu from "../assets/menu.png"
 import { Outlet } from 'react-router-dom';
 

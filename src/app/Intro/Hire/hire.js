@@ -45,8 +45,8 @@ const Hire = ()=>{
                 Organize,delegate and keep track of tasks
             </li>
 
-                        </ul>
-                        <a href="" class="btn btn-primary btn-block">Get Started</a>
+                </ul>
+                    <a href="" class="btn btn-primary btn-block">Get Started</a>
                     </div>
                 </div>
                 
@@ -86,6 +86,43 @@ const Hire = ()=>{
                         <a href="" class="btn btn-primary btn-block">Get Started</a>
                     </div>
                 </div>
+                <div class="card premium bg-black">
+                    <div class="pricing-card-header">
+                        <h4 class="pricing-heading text-xl">
+                            Premium
+                        </h4>
+                        <p class="pricing-card-subheading">
+                            Keep Track of your contacts, gain valiable insights, analyse
+                            live data and perfromances metrics.
+                        </p>
+                        <p class="pricing-card-price">
+                            <span class="text-xl">$99</span>
+                            /month
+                        </p>
+                    </div>
+                    <div class="pricing-card-body">
+                        <p>Everything from the free plan plus:</p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-check">
+                                </i>
+                            Data driven Decisions
+                        </li>
+                        <li>
+                            <i class="fas fa-check">
+                            </i>
+                        Data visualization
+                    </li>
+                    <li>
+                        <i class="fas fa-check">
+                        </i>
+                    Schedule appointments
+                </li>
+                        </ul>
+                        <a href="" class="btn btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+               
                 
 
             </div>
