@@ -1,17 +1,17 @@
-import "./App.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import Home from "./app/pages/Home";
-import Layout from "./app/Layout";
 import Hire from "./app/Intro/Hire/hire";
 import Intro from "./app/Intro/intro";
-import Navbar from "./app/Navbar/navbar"
+import Navbar from "./app/Navbar/navbar";
 import Skills from "./app/Skills/skills";
 import Contact from "./app/Contact/contact";
 import Works from "./app/Works/work";
 function App() {
   return (
     <BrowserRouter>
-      < Navbar/>
+      <Navbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/Hire" element={<Hire />} />
@@ -19,9 +19,6 @@ function App() {
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Works" element={<Works />} />
-
-        
-                  
       </Routes>
     </BrowserRouter>
   );
